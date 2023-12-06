@@ -112,7 +112,8 @@ class TicketAPI(object):
         """Updates a ticket from a given ticket ID"""
         url = "tickets/%d" % ticket_id
         ticket = self._api._put(url, data=json.dumps(kwargs))
-        return Ticket(**ticket)
+        #return Ticket(**ticket)
+        return ticket
 
     def delete_ticket(self, ticket_id):
         """Delete the ticket for the given ticket ID"""
@@ -231,8 +232,7 @@ class TicketAPI(object):
             data.update({"note_in_primary": note_in_primary})
         if note_in_secondary and isinstance(note_in_secondary, dict):
             data.update({"note_in_secondary": note_in_secondary})
-        ticket = self._api._put(url, data=json.dumps(data))
-        return Ticket(**ticket)
+        return self._api._put(url, data=json.dumps(data))
 
 
 class CommentAPI(object):
