@@ -1,6 +1,14 @@
 Changelog
 =========
 
+v1.3.10 - 2023-12-06 (Unreleased)
+
+ * migrate to new github orga python-freshdesk
+ * #82: Updates to allow Comments (Notes & Replies) to contain attachments
+ * #88: Add "comments" property to Ticket v2 API
+ * #89: Add merge tickets
+ * remove support for Python 2
+
 v1.3.9 - 2022-09-16
 
  * #80: Add support for Contacts (@mmahacek)

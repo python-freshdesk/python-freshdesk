@@ -1,10 +1,6 @@
 # python-freshdesk
 
-[![Build Status](https://travis-ci.org/sjkingo/python-freshdesk.svg)](https://travis-ci.org/sjkingo/python-freshdesk)
-[![Coverage Status](https://img.shields.io/coveralls/sjkingo/python-freshdesk.svg)](https://coveralls.io/r/sjkingo/python-freshdesk)
-[![Latest version](https://img.shields.io/pypi/v/python-freshdesk.svg)](https://pypi.python.org/pypi/python-freshdesk)
-
-This is a library for the [Freshdesk](http://freshdesk.com/) helpdesk system for Python 2.7 and 3.6+.
+This is a library for the [Freshdesk](http://freshdesk.com/) helpdesk system for Python 3.6+.
 
 It includes the following features from the [Freshdesk v2 API](https://developers.freshdesk.com/api/):
 
@@ -18,6 +14,7 @@ It includes the following features from the [Freshdesk v2 API](https://developer
   - [Filter](https://developer.freshdesk.com/api/#filter_tickets) (from 1.2.6)
   - [List Time Entries](https://developers.freshdesk.com/api/#list_all_ticket_timeentries) (from 1.2.4)
   - Custom ticket fields (from 1.1.1)
+  - [Merge Tickets](https://developers.freshdesk.com/api/#ticket_merge) (from 1.3.8)
 * [Ticket Fields](http://developer.freshdesk.com/api/#ticket_fields)
     - [List](http://developer.freshdesk.com/api/#list_all_ticket_fields)
 * [Comments](http://developer.freshdesk.com/api/#conversations) (known as Conversations in Freshdesk)
@@ -90,7 +87,7 @@ From version 1.3.0, this library uses the Freshdesk v2 API by default.
 
 The easiest way to install is from [PyPi](https://pypi.python.org/pypi/python-freshdesk) inside a virtualenv:
 
-1. Create the virtualenv (Python 2.7 and 3.6+ supported) and activate it:
+1. Create the virtualenv (Python 3.6+ supported) and activate it:
 
    ```
    $ virtualenv cool_app
