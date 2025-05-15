@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "freshdesk"
+version = "1.3.9"
+description = "Python wrapper for Freshdesk API"
+authors = [
+    "Jochen Werner <jochen.werner@skaylink.com>"
+]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "*"
+python-dateutil = "*"
+
+[tool.poetry.dev-dependencies]
+pytest = "^8.0"
+black = "^24.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
