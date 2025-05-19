@@ -7,3 +7,4 @@ dist/
 /cover
 .tox
 build/
+uv.lock
